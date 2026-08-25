@@ -1,0 +1,322 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "newTab",
+                "profile": "Git Bash"
+            },
+            "id": "User.newTab.AB5EC4B0"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab",
+                "profile": "PowerShell"
+            },
+            "id": "User.newTab.B958D21E"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab",
+                "profile": "Claude Code"
+            },
+            "id": "User.newTab.2F400C0F"
+        }
+    ],
+    "alwaysShowTabs": true,
+    "copyFormatting": "none",
+    "copyOnSelect": true,
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "disableAnimations": false,
+    "focusFollowMouse": false,
+    "initialCols": 140,
+    "initialRows": 36,
+    "keybindings": 
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "id": "Terminal.FindText",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "Terminal.OpenSettingsFile",
+            "keys": "ctrl+comma"
+        },
+        {
+            "id": "Terminal.TogglePaneZoom",
+            "keys": "ctrl+shift+z"
+        },
+        {
+            "id": "User.newTab.AB5EC4B0",
+            "keys": "ctrl+shift+3"
+        },
+        {
+            "id": "Terminal.DecreaseFontSize",
+            "keys": "ctrl+minus"
+        },
+        {
+            "id": "Terminal.IncreaseFontSize",
+            "keys": "ctrl+plus"
+        },
+        {
+            "id": "Terminal.DuplicatePaneRight",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "Terminal.ToggleCommandPalette",
+            "keys": "ctrl+shift+p"
+        },
+        {
+            "id": "Terminal.ToggleFullscreen",
+            "keys": "f11"
+        },
+        {
+            "id": "Terminal.DuplicatePaneDown",
+            "keys": "alt+shift+s"
+        },
+        {
+            "id": "Terminal.ClosePane",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "id": "Terminal.MoveFocusLeft",
+            "keys": "alt+left"
+        },
+        {
+            "id": "Terminal.MoveFocusRight",
+            "keys": "alt+right"
+        },
+        {
+            "id": "Terminal.MoveFocusUp",
+            "keys": "alt+up"
+        },
+        {
+            "id": "Terminal.MoveFocusDown",
+            "keys": "alt+down"
+        },
+        {
+            "id": "Terminal.ResizePaneLeft",
+            "keys": "ctrl+alt+left"
+        },
+        {
+            "id": "Terminal.ResizePaneRight",
+            "keys": "ctrl+alt+right"
+        },
+        {
+            "id": "Terminal.ResizePaneUp",
+            "keys": "ctrl+alt+up"
+        },
+        {
+            "id": "Terminal.ResizePaneDown",
+            "keys": "ctrl+alt+down"
+        },
+        {
+            "id": "User.newTab.2F400C0F",
+            "keys": "ctrl+shift+2"
+        },
+        {
+            "id": "Terminal.ResetFontSize",
+            "keys": "ctrl+0"
+        },
+        {
+            "id": "User.newTab.B958D21E",
+            "keys": "ctrl+shift+1"
+        },
+        {
+            "id": "Terminal.ScrollToTop",
+            "keys": "ctrl+home"
+        },
+        {
+            "id": "Terminal.ScrollToBottom",
+            "keys": "ctrl+end"
+        },
+        {
+            "id": "Terminal.ClearBuffer",
+            "keys": "ctrl+shift+k"
+        }
+    ],
+    "launchMode": "default",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "adjustIndistinguishableColors": "never",
+            "altGrAliasing": true,
+            "antialiasingMode": "grayscale",
+            "bellStyle": "none",
+            "colorScheme": "Nightdrive",
+            "cursorShape": "filledBox",
+            "experimental.retroTerminalEffect": false,
+            "font": 
+            {
+                "face": "JetBrainsMono NFM",
+                "features": 
+                {
+                    "calt": 1,
+                    "liga": 1
+                },
+                "size": 11,
+                "weight": "normal"
+            },
+            "historySize": 20000,
+            "intenseTextStyle": "bold",
+            "opacity": 88,
+            "padding": "14, 12, 14, 12",
+            "scrollbarState": "visible",
+            "snapOnInput": true,
+            "startingDirectory": "%USERPROFILE%",
+            "useAcrylic": true
+        },
+        "list": 
+        [
+            {
+                "commandline": "powershell.exe -NoLogo",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "icon": "\u26a1",
+                "name": "PowerShell",
+                "tabTitle": "PowerShell"
+            },
+            {
+                "colorScheme": "Nightdrive Void",
+                "commandline": "powershell.exe -NoLogo -NoExit -Command \"claude\"",
+                "environment": 
+                {
+                    "NIGHTDRIVE_QUIET": "1"
+                },
+                "guid": "{7b2c1f4e-9a3d-4c88-b1e6-0d5a72f9c410}",
+                "hidden": false,
+                "icon": "\ud83e\udde0",
+                "name": "Claude Code",
+                "opacity": 94,
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "colorScheme": "Nightdrive",
+                "commandline": "\"%ProgramFiles%\\Git\\bin\\bash.exe\" --login -i",
+                "guid": "{3a8f6d21-5e74-4b0c-9f13-2c6b8e40da97}",
+                "hidden": false,
+                "icon": "\ud83c\udf3f",
+                "name": "Git Bash",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "colorScheme": "Nightdrive Void",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "icon": "\ud83d\udda5\ufe0f",
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#0B0E14",
+            "black": "#11141C",
+            "blue": "#5AA9FF",
+            "brightBlack": "#5A6480",
+            "brightBlue": "#8CC5FF",
+            "brightCyan": "#8CFFF8",
+            "brightGreen": "#8CFFC7",
+            "brightPurple": "#E0B3FF",
+            "brightRed": "#FF8FA3",
+            "brightWhite": "#F0F4FC",
+            "brightYellow": "#FFE29A",
+            "cursorColor": "#4DE8E0",
+            "cyan": "#4DE8E0",
+            "foreground": "#C9D1E1",
+            "green": "#5CE6A6",
+            "name": "Nightdrive",
+            "purple": "#C792EA",
+            "red": "#FF5C7A",
+            "selectionBackground": "#2A3550",
+            "white": "#C9D1E1",
+            "yellow": "#FFD166"
+        },
+        {
+            "background": "#05070B",
+            "black": "#0A0C12",
+            "blue": "#4E9BF0",
+            "brightBlack": "#4C5670",
+            "brightBlue": "#82BCFF",
+            "brightCyan": "#7FF0EA",
+            "brightGreen": "#7FF3C0",
+            "brightPurple": "#D6A8FF",
+            "brightRed": "#FF8FA3",
+            "brightWhite": "#EAF0FA",
+            "brightYellow": "#FFDD94",
+            "cursorColor": "#FF6FD8",
+            "cyan": "#3FD8D0",
+            "foreground": "#BFC9DC",
+            "green": "#4FD9A0",
+            "name": "Nightdrive Void",
+            "purple": "#B27FE0",
+            "red": "#FF5C7A",
+            "selectionBackground": "#241E3A",
+            "white": "#BFC9DC",
+            "yellow": "#F5C462"
+        }
+    ],
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": true,
+    "tabWidthMode": "titleLength",
+    "theme": "nightdrive",
+    "themes": 
+    [
+        {
+            "name": "nightdrive",
+            "tab": 
+            {
+                "background": "#141925FF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": "#0B0E14FF"
+            },
+            "tabRow": 
+            {
+                "background": "#0B0E14FF",
+                "unfocusedBackground": "#07090EFF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        }
+    ],
+    "trimBlockSelection": true,
+    "trimPaste": true,
+    "useAcrylicInTabRow": true,
+    "warning.confirmCloseAllTabs": true,
+    "windowingBehavior": "useNew",
+    "wordDelimiters": " /\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
+}
